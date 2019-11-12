@@ -1,0 +1,176 @@
+<div class="page-wrapper">
+    <div class="header">
+        <div class="header__wrapper">
+            <a href="#" class="header__logo">
+                <svg class="header__logo-icon icon-voucher-logo">
+                    <use xlink:href="./images/icons-sprite.svg#voucher-logo"></use>
+                </svg>
+            </a>
+
+            <div class="header__nav-bar nav-bar">
+                <div class="nav-bar__support">
+                    <span class="nav-bar__support-title">Служба поддержки:</span>
+
+                    <a class="nav-bar__support-email" href="mailto:support@voucher.com">support@voucher.com</a>
+                </div>
+
+                <div class="nav-bar__account">
+                    <img class="nav-bar__account-img" src="./images/avatar.png" alt="avatar">
+
+                    <div class="nav-bar__account-person">
+                        <div class="nav-bar__account-name">Андрей Балконский</div>
+
+                        <div class="nav-bar__account-status">не верифицирован</div>
+                    </div>
+                    <a href="/user/logout">
+                        <div class="nav-bar__account-btn">
+                            <svg class="nav-bar__account-btn-icon icon-arrow">
+                                <use xlink:href="./images/icons-sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__side-bar side-bar js-side-bar">
+            <div class="side-menu">
+                <ul class="side-menu__list">
+                    <li class="side-menu__list-item js-menu-item" data-menu-item="buy-voucher">
+                        <svg class="side-menu__list-icon icon-voucher">
+                            <use xlink:href="./images/icons-sprite.svg#voucher"></use>
+                        </svg>
+
+                        <span class="side-menu__list-text">Купить ваучер</span>
+                    </li>
+
+                    <li class="side-menu__list-item js-menu-item" data-menu-item="active-voucher">
+                        <svg class="side-menu__list-icon icon-voucher-active">
+                            <use xlink:href="./images/icons-sprite.svg#voucher-active"></use>
+                        </svg>
+
+                        <span class="side-menu__list-text">Активировать ваучер</span>
+                    </li>
+
+                    <li class="side-menu__list-item js-menu-item" data-menu-item="my-voucher">
+                        <svg class="side-menu__list-icon icon-voucher-my">
+                            <use xlink:href="./images/icons-sprite.svg#voucher-my"></use>
+                        </svg>
+
+                        <span class="side-menu__list-text">Мои ваучеры</span>
+                    </li>
+
+                    <li class="side-menu__list-item js-menu-item" data-menu-item="history">
+                        <svg class="side-menu__list-icon icon-history">
+                            <use xlink:href="./images/icons-sprite.svg#history"></use>
+                        </svg>
+
+                        <span class="side-menu__list-text">История</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="side-bar__btn js-side-bar-btn">
+                <svg class="side-bar__btn-icon icon-down-arrow">
+                    <use xlink:href="./images/icons-sprite.svg#down-arrow"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="content__main">
+            <div class="content__main-wrapper js-scrollbar">
+                <div class="content__main-card buy-voucher js-menu-block is-active" data-block-item="buy-voucher">
+                    <div class="content__main-card-title">Купить ваучер</div>
+
+                    <form action="#" class="buy-voucher__form">
+                        <div class="buy-voucher__form-wrapper">
+                            <label class="buy-voucher__form-label buy-voucher__form-label-input" for="sum-voucher">
+                                <span class="buy-voucher__form-label-text buy-voucher__form-title">Сумма ваучера (от ₽1 до ₽500 000)</span>
+
+                                <input class="buy-voucher__form-input" required autocomplete="off" type="number"
+                                       id="sum-voucher" placeholder="150 000">
+
+                                <span class="buy-voucher__form-input-sign">₽</span>
+                            </label>
+
+                            <label class="buy-voucher__form-label buy-voucher__form-label-select"
+                                   for="sum-voucher-currency">
+                                <span class="buy-voucher__form-label-text buy-voucher__form-title">Валюта</span>
+
+                                <select class="buy-voucher__form-select" id="sum-voucher-currency">
+                                    <option class="buy-voucher__form-select-option" value="rub"> RUB, ₽</option>
+
+                                    <option class="buy-voucher__form-select-option" value="dol"> DOL, $</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="buy-voucher__form-wrapper buy-voucher__form-wrapper--vertical">
+                            <div class="buy-voucher__form-commission">
+                                <span class="buy-voucher__form-commission-title buy-voucher__form-title">Комиссия</span>
+
+                                <span class="buy-voucher__form-commission-value">2.00%</span>
+                            </div>
+
+                            <div class="buy-voucher__form-total">
+                                <div class="buy-voucher__form-total-title buy-voucher__form-title">Сумма к оплате</div>
+
+                                <div class="buy-voucher__form-total-value">₽ 153 000.00</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="buy-voucher__form-btn">Купить ваучер</button>
+
+                        <div class="buy-voucher__form-information">
+                            <span class="buy-voucher__form-information-text">
+                                Нажимая на кнопку «Купить», Вы принимаете условия
+                            </span>
+
+                            <a href="#" class="buy-voucher__form-information-link">Пользовательского соглашения</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="content__main-card active-voucher js-menu-block" data-block-item="active-voucher">
+                    <div class="content__main-card-title">Активировать ваучер</div>
+                </div>
+                <div class="content__main-card my-voucher js-menu-block" data-block-item="my-voucher">
+                    <div class="content__main-card-title">Мои ваучеры</div>
+                </div>
+                <div class="content__main-card history js-menu-block" data-block-item="history">
+                    <div class="content__main-card-title">История</div>
+                </div>
+            </div>
+
+            <div class="content__main-footer footer">
+                <div class="footer__information">
+                    <a href="#" class="footer__information-link footer__link-text">Пользовательское соглашение</a>
+
+                    <a href="#" class="footer__information-link footer__link-text">Оферта</a>
+
+                    <a href="#" class="footer__information-link footer__link-text">AML</a>
+                </div>
+
+                <div class="footer__card">
+                    <svg class="footer__card-icon icon-pci">
+                        <use xlink:href="./images/icons-sprite.svg#pci"></use>
+                    </svg>
+
+                    <svg class="footer__card-icon icon-mastercard">
+                        <use xlink:href="./images/icons-sprite.svg#mastercard"></use>
+                    </svg>
+
+                    <svg class="footer__card-icon icon-visa">
+                        <use xlink:href="./images/icons-sprite.svg#visa"></use>
+                    </svg>
+                </div>
+
+                <div class="footer__lang">
+                    <a href="#" class="footer__lang-item footer__link-text">Eng</a>
+                    <a href="#" class="footer__lang-item footer__link-text">Rus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

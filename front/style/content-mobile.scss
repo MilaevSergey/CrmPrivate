@@ -1,0 +1,28 @@
+//Content-mobile start
+
+@media (max-width: 1040px) {
+  .content {
+    &__side-bar {
+      transition: all 1s;
+      margin-left: -360px;
+      &.is-open {
+        margin-left: 0;
+        position: absolute;
+        z-index: 3000;
+      }
+    }
+    &__main {
+      padding: 16px 16px 0 68px;
+    }
+  }
+  .side-bar {
+    &__btn {
+      display: block;
+    }
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+//Content-mobile end

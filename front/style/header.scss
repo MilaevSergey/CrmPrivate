@@ -1,0 +1,87 @@
+//Header Start
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  left: 0;
+  height: 60px;
+  background: $basic-white;
+  box-shadow: 0 0 8px 16px rgba(0, 0, 0, 0.04);
+  &__wrapper {
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    height: 100%;
+    &-icon {
+      height: 100%;
+      width: 160px;
+    }
+  }
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  &__support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+    &-title {
+      font: 400 11px / 11px $main-font;
+      margin-bottom: 4px;
+      color: $basic-text-grey;
+    }
+    &-email {
+      font: 500 11px / 11px $main-font;
+      color: $basic-text-blue;
+    }
+  }
+  &__account {
+    padding: 8px;
+    background: $basic-grey;
+    display: flex;
+    align-items: center;
+    &-img {
+      object-fit: cover;
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      margin-right: 8px;
+      font-family: 'object-fit: cover;';
+    }
+    &-person {
+      margin-right: 8px;
+    }
+    &-name {
+      font: 400 14px / 14px $main-font;
+      color: $basic-text-blue;
+      margin-bottom: 6px;
+    }
+    &-status {
+      font: 400 10px / 10px $main-font;
+      color: $basic-text-grey;
+    }
+    &-btn {
+      cursor: pointer;
+      height: 28px;
+      width: 28px;
+      background: $basic-white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-icon {
+        height: 6px;
+        width: 8px;
+      }
+    }
+  }
+}
+//Header End

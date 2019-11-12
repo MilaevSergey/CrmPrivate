@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Y-project</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+
+{{> header}}
+<div class="page page-enter">
+    <div class="page__wrapper">
+        <h3 class="page__title">Welcome in Logistic Service</h3>
+        <a href="/user/register">Registration</a>
+        <a href="/user/login">Login</a>
+        <a href="/user/restore-password">Restore-password</a>
+        <div class="page__content">
+            {{{body}}}
+        </div>
+    </div>
+</div>
+
+
+{{> footer}}
+<script src="/js/bundle.js"></script>
+
+</body>
+</html>

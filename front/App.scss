@@ -1,0 +1,10 @@
+@import './helpers/reset.scss';
+@import "./node_modules/gemini-scrollbar/gemini-scrollbar.css";
+@import './helpers/variables.scss';
+@import './helpers/shared.scss';
+@import './style/header';
+@import './style/content.scss';
+@import "./style/enter";
+
+//Mobile style
+@import "./style/content-mobile";
