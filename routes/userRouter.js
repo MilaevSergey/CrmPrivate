@@ -5,7 +5,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // определяем роутеры
 const userRouter = express.Router(); // для адресов с "/users"
-
+//Change user local user
 userRouter.post("/register", urlencodedParser, userController.register);
 userRouter.post("/login", urlencodedParser, userController.login);
 userRouter.post("/restore", urlencodedParser, userController.restore);
